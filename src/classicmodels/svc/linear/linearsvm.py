@@ -20,7 +20,7 @@ class LinearSVM(ClassicModel):
         )
 
         self.best_c = self._best_param_dict['C']
-        self.final_model = LinearSVC(C=self.best_c, dual=False)
+        self._final_model = LinearSVC(C=self.best_c, dual=False)
 
     def __str__(self):
         return f'LinearSVM(C={self.best_c})'

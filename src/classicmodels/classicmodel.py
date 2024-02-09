@@ -58,7 +58,7 @@ class ClassicModel:
 
     def train(self) -> None:
         if self._final_model is None:
-            raise ValueError('Model has not been trained yet')
+            raise ValueError('Model has not been initialised')
 
         print('Training ...')
         self._final_model.fit(self.X_train, self.y_train)
@@ -79,6 +79,10 @@ class ClassicModel:
         image_gray = image.convert('L')
         image_array = np.array(image_gray)
         normalized_image_array = image_array / 255.0
+        transformed_array = self.mnist.transform(normalized_image_array.flatten())
+        return self.predict(transformed_array)
+
+    def predict_from_normalized_image_array(self, normalized_image_array) -> int:
         transformed_array = self.mnist.transform(normalized_image_array.flatten())
         return self.predict(transformed_array)
 

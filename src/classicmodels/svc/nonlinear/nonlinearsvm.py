@@ -21,7 +21,7 @@ class NonLinearSVM(ClassicModel):
 
         self.best_c = self._best_param_dict['C']
         self.best_gamma = self._best_param_dict['gamma']
-        self.final_model = SVC(kernel='rbf', C=self.best_c, gamma=self.best_gamma)
+        self._final_model = SVC(kernel='rbf', C=self.best_c, gamma=self.best_gamma)
 
     def __str__(self):
         return f'NonLinearSVM(C={self.best_c}, gamma={self.best_gamma})'

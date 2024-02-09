@@ -21,7 +21,7 @@ class KNN(ClassicModel):
         )
 
         self.best_n_neighbors = self._best_param_dict['n_neighbors']
-        self.final_model = KNeighborsClassifier(n_neighbors=self.best_n_neighbors)
+        self._final_model = KNeighborsClassifier(n_neighbors=self.best_n_neighbors)
 
     def __str__(self):
         return f'KNN(n_neighbors={self.best_n_neighbors})'

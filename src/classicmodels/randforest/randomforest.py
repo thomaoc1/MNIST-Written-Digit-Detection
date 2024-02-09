@@ -22,7 +22,7 @@ class RandomForest(ClassicModel):
         self.best_n_estimators = self._best_param_dict['n_estimators']
         self.best_max_depth = self._best_param_dict['max_depth']
 
-        self.final_model = RandomForestClassifier(n_estimators=self.best_n_estimators, max_depth=self.best_max_depth)
+        self._final_model = RandomForestClassifier(n_estimators=self.best_n_estimators, max_depth=self.best_max_depth)
 
     def __str__(self):
         return f'RandomForest(n_estimators={self.best_n_estimators}, max_depth={self.best_max_depth})'
