@@ -24,3 +24,8 @@ The evaluation of each model is done in a jupyter notebook found in each model's
 3. [Random Forest](https://github.com/thomaoc1/MNIST-digit-detection/blob/main/src/classicmodels/randforest/evaluation.ipynb)
 4. [KNN](https://github.com/thomaoc1/MNIST-digit-detection/blob/main/src/classicmodels/knn/evaluation.ipynb)
 5. [CNN](https://github.com/thomaoc1/MNIST-digit-detection/blob/main/src/cnn/evaluation.ipynb)
+
+### Features
+For the CNN, you can input a self drawn digit as shown below and see a prediction in real time.
+
+![example.gif](res%2Fexample.gif)
