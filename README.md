@@ -1,4 +1,11 @@
 # MNIST Written Digit Recognition
+
+<figure>
+  <img src="res/example.gif" alt="Your Alt Text Here">
+  <figcaption></figcaption>
+</figure>
+
+
 The goal of this mini project is to use different machine learning algorithms to recognize handwritten digits. The dataset used is the [MNIST dataset](https://www.kaggle.com/datasets/hojjatk/mnist-dataset) which is a collection of 28x28 pixel images of handwritten digits. The dataset contains 60,000 training images and 10,000 testing images. The goal is to correctly identify digits from 0 to 9. 
 
 The following sections will describe the preprocessing performed followed by the different methods used thus far for this task.
@@ -24,8 +31,3 @@ The evaluation of each model is done in a jupyter notebook found in each model's
 3. [Random Forest](https://github.com/thomaoc1/MNIST-digit-detection/blob/main/src/classicmodels/randforest/evaluation.ipynb)
 4. [KNN](https://github.com/thomaoc1/MNIST-digit-detection/blob/main/src/classicmodels/knn/evaluation.ipynb)
 5. [CNN](https://github.com/thomaoc1/MNIST-digit-detection/blob/main/src/cnn/evaluation.ipynb)
-
-### Features
-For the [CNN](https://github.com/thomaoc1/MNIST-digit-detection/blob/main/src/cnn/evaluation.ipynb), you can input a self drawn digit as shown below and see a prediction in real time.
-
-![example.gif](res%2Fexample.gif)
